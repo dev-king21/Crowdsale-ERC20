@@ -1,0 +1,545 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "mintingFinished",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "approve",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "totalSupply",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFrom",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "decimals",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"name": "addedValue",
+						"type": "uint256"
+					}
+				],
+				"name": "increaseAllowance",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "mint",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "finishMinting",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "symbol",
+				"outputs": [
+					{
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "addMinter",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "renounceMinter",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"name": "subtractedValue",
+						"type": "uint256"
+					}
+				],
+				"name": "decreaseAllowance",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "isMinter",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"name": "spender",
+						"type": "address"
+					}
+				],
+				"name": "allowance",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"anonymous": false,
+				"inputs": [],
+				"name": "MintingFinished",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "MinterAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "MinterRemoved",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Approval",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {
+				"allowance(address,address)": {
+					"details": "Function to check the amount of tokens that an owner allowed to a spender.\r",
+					"params": {
+						"owner": "address The address which owns the funds.\r",
+						"spender": "address The address which will spend the funds.\r"
+					},
+					"return": "A uint256 specifying the amount of tokens still available for the spender.\r"
+				},
+				"approve(address,uint256)": {
+					"details": "Approve the passed address to spend the specified amount of tokens on behalf of msg.sender.\r Beware that changing an allowance with this method brings the risk that someone may use both the old\r and the new allowance by unfortunate transaction ordering. One possible solution to mitigate this\r race condition is to first reduce the spender's allowance to 0 and set the desired value afterwards:\r https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729\r",
+					"params": {
+						"spender": "The address which will spend the funds.\r",
+						"value": "The amount of tokens to be spent.\r"
+					}
+				},
+				"balanceOf(address)": {
+					"details": "Gets the balance of the specified address.\r",
+					"params": {
+						"owner": "The address to query the the balance of.\r"
+					},
+					"return": "An uint256 representing the amount owned by the passed address.\r"
+				},
+				"decreaseAllowance(address,uint256)": {
+					"details": "Decrease the amount of tokens that an owner allowed to a spender.\r approve should be called when allowed_[_spender] == 0. To decrement\r allowed value is better to use this function to avoid 2 calls (and wait until\r the first transaction is mined)\r From MonolithDAO Token.sol\r",
+					"params": {
+						"spender": "The address which will spend the funds.\r",
+						"subtractedValue": "The amount of tokens to decrease the allowance by.\r"
+					}
+				},
+				"finishMinting()": {
+					"details": "Function to stop minting new tokens.\r",
+					"return": "True if the operation was successful.\r"
+				},
+				"increaseAllowance(address,uint256)": {
+					"details": "Increase the amount of tokens that an owner allowed to a spender.\r approve should be called when allowed_[_spender] == 0. To increment\r allowed value is better to use this function to avoid 2 calls (and wait until\r the first transaction is mined)\r From MonolithDAO Token.sol\r",
+					"params": {
+						"addedValue": "The amount of tokens to increase the allowance by.\r",
+						"spender": "The address which will spend the funds.\r"
+					}
+				},
+				"mint(address,uint256)": {
+					"details": "Function to mint tokens\r",
+					"params": {
+						"amount": "The amount of tokens to mint.\r",
+						"to": "The address that will receive the minted tokens.\r"
+					},
+					"return": "A boolean that indicates if the operation was successful.\r"
+				},
+				"mintingFinished()": {
+					"return": "true if the minting is finished.\r"
+				},
+				"totalSupply()": {
+					"details": "Total number of tokens in existence\r"
+				},
+				"transfer(address,uint256)": {
+					"details": "Transfer token for a specified address\r",
+					"params": {
+						"to": "The address to transfer to.\r",
+						"value": "The amount to be transferred.\r"
+					}
+				},
+				"transferFrom(address,address,uint256)": {
+					"details": "Transfer tokens from one address to another\r",
+					"params": {
+						"from": "address The address which you want to send tokens from\r",
+						"to": "address The address which you want to transfer to\r",
+						"value": "uint256 the amount of tokens to be transferred\r"
+					}
+				}
+			}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"OPTtoken/OPTToken.sol": "OPTToken"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"OPTtoken/Crowdsale.sol": {
+			"keccak256": "0xf517927b68bf0fdda1fe9c054f2cee159c955b1d5955fce450016e97531ec5a7",
+			"urls": [
+				"bzzr://71fe1888de0a7e304cc4e49f43ce23777ecf62e57e9e4d904d3c94897e370392"
+			]
+		},
+		"OPTtoken/ERC20.sol": {
+			"keccak256": "0xa00914df397a0d075f4a538be12d8eb8bf0cf0517e7576a310cdd12a2a8cbe60",
+			"urls": [
+				"bzzr://9de33ca1f761012227aeed27cd2a3898e8b800f9df752b19aa6f8634709e0e4d"
+			]
+		},
+		"OPTtoken/ERC20Mintable.sol": {
+			"keccak256": "0x3b5dd2fab1c4f0246e6a22acd5b2bd4b9ae3e7bb532d160744bc40af30440d54",
+			"urls": [
+				"bzzr://bca19eda8bf1126cd19d3b892c5bba9e8aef7d8a483025c9f93cd2bc30eaeb74"
+			]
+		},
+		"OPTtoken/IERC20.sol": {
+			"keccak256": "0x14d9f19f6282b54005ec9fcdf159eb09228da7b00a1110354d1bdbf8ef7d24c1",
+			"urls": [
+				"bzzr://4ca226182a1e69db63a7105649a41ed67583fd09c543abf88e04b7d331e26b23"
+			]
+		},
+		"OPTtoken/MintedCrowdsale.sol": {
+			"keccak256": "0x9890f136c13c2cfa16bd502d416b1c72ad088ff71ec5e779586ade2aec082557",
+			"urls": [
+				"bzzr://be1aef0e0d314bf44e855c8925fe4e4ad67a430a8e3cc8137a20f3b8ce22d5f1"
+			]
+		},
+		"OPTtoken/MinterRole.sol": {
+			"keccak256": "0xa4372bf28c8267593e671f446e9dc055ef82e235b01cadf8409e1f280ef8edca",
+			"urls": [
+				"bzzr://510b27ed3255020c078c4d3490e174e02b63fa9235e05dc004665c61cdd4198d"
+			]
+		},
+		"OPTtoken/OPTToken.sol": {
+			"keccak256": "0x417fa6d16bdb96cf645e0d2a877b81c6c1783c58258c94d95535d611dd516208",
+			"urls": [
+				"bzzr://c866ead43a0edadcf740dbaca49ae53972af4792730492e834aa2323ec371384"
+			]
+		},
+		"OPTtoken/Roles.sol": {
+			"keccak256": "0x8f02c5bd40c2773a2ccc0da7b9874e2c05e5e7924d4fea60c1cad0722a181aa2",
+			"urls": [
+				"bzzr://dd955cd5cad77eb88af4d05a095e7fa1fd00319905d038ff4e9e34b0db744c67"
+			]
+		},
+		"OPTtoken/SafeERC20.sol": {
+			"keccak256": "0x9c424f8d870fe13254eef8e2f07fd9b45ebb48e893e26a41cf8110479ee2b3a0",
+			"urls": [
+				"bzzr://0e3d51729a62b5f32fd0e4a694e5542d41cde495c70ab07acf8a094458d1bd18"
+			]
+		},
+		"OPTtoken/SafeMath.sol": {
+			"keccak256": "0x807c7cc7ca04b74e084ca261006f917603f00a48fb9d6641dbb05a2a1a0c3471",
+			"urls": [
+				"bzzr://d3cfb21a6911d39eedfe6ac6d08d535a33753d7a3e0e4fee559ee470105f1c80"
+			]
+		}
+	},
+	"version": 1
+}

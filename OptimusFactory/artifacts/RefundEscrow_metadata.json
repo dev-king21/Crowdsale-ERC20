@@ -1,0 +1,293 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "recipient",
+						"type": "address"
+					}
+				],
+				"name": "transferPrimary",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "beneficiary",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "close",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "payee",
+						"type": "address"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "payee",
+						"type": "address"
+					}
+				],
+				"name": "withdrawalAllowed",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "enableRefunds",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "beneficiaryWithdraw",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "state",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "primary",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "payee",
+						"type": "address"
+					}
+				],
+				"name": "depositsOf",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "refundee",
+						"type": "address"
+					}
+				],
+				"name": "deposit",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"name": "beneficiary",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [],
+				"name": "Closed",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [],
+				"name": "RefundsEnabled",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "payee",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "weiAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "Deposited",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "payee",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "weiAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "Withdrawn",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {
+				"beneficiary()": {
+					"return": "the beneficiary of the escrow.\r"
+				},
+				"beneficiaryWithdraw()": {
+					"details": "Withdraws the beneficiary's funds.\r"
+				},
+				"close()": {
+					"details": "Allows for the beneficiary to withdraw their funds, rejecting\r further deposits.\r"
+				},
+				"deposit(address)": {
+					"details": "Stores funds that may later be refunded.\r",
+					"params": {
+						"refundee": "The address funds will be sent to if a refund occurs.\r"
+					}
+				},
+				"enableRefunds()": {
+					"details": "Allows for refunds to take place, rejecting further deposits.\r"
+				},
+				"state()": {
+					"return": "the current state of the escrow.\r"
+				},
+				"withdrawalAllowed(address)": {
+					"details": "Returns whether refundees can withdraw their deposits (be refunded).\r"
+				}
+			},
+			"title": "RefundEscrow\r"
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"OptimusFactory/RefundEscrow.sol": "RefundEscrow"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"OptimusFactory/ConditionalEscrow.sol": {
+			"keccak256": "0x99ffa6b0dabcfbdd06c657f9587672643a7b6b3a9b9f0f03b2ce6dcfb468836c",
+			"urls": [
+				"bzzr://50273fcd52a57bfa3dd20e4711a2d2e9cad2d284db1bb42862ba00951447b54a"
+			]
+		},
+		"OptimusFactory/Escrow.sol": {
+			"keccak256": "0x803b73510f9b7e6193451c07a26e3bff80fd84bed14915005a8c9854ef9f7db6",
+			"urls": [
+				"bzzr://70518db7d4f76281f563a9bfaa69cdea2ed6fd7010981b5f672cd02b7f41e537"
+			]
+		},
+		"OptimusFactory/RefundEscrow.sol": {
+			"keccak256": "0x2607767c85415e99434c8edc21b8c8eb49147f0e04091d26b5433e8c56cba969",
+			"urls": [
+				"bzzr://566082cc4a67f5af8fdcd49544a6a1ac2d9a3bd7c050e31a59fc2f37aeadd32f"
+			]
+		},
+		"OptimusFactory/SafeMath.sol": {
+			"keccak256": "0x807c7cc7ca04b74e084ca261006f917603f00a48fb9d6641dbb05a2a1a0c3471",
+			"urls": [
+				"bzzr://d3cfb21a6911d39eedfe6ac6d08d535a33753d7a3e0e4fee559ee470105f1c80"
+			]
+		},
+		"OptimusFactory/Secondary.sol": {
+			"keccak256": "0xf275eb50121b2dc0efcc9ee21a627d2386f57ff2e2154e326b114b1992062db9",
+			"urls": [
+				"bzzr://dccc558e11a77c5779fde718a88618a83798281e27279ca39716cd319e4adc9a"
+			]
+		}
+	},
+	"version": 1
+}

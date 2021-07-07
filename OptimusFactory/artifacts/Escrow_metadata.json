@@ -1,0 +1,172 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "recipient",
+						"type": "address"
+					}
+				],
+				"name": "transferPrimary",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "payee",
+						"type": "address"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "primary",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "payee",
+						"type": "address"
+					}
+				],
+				"name": "depositsOf",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "payee",
+						"type": "address"
+					}
+				],
+				"name": "deposit",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "payee",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "weiAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "Deposited",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "payee",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "weiAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "Withdrawn",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {
+				"deposit(address)": {
+					"details": "Stores the sent amount as credit to be withdrawn.\r",
+					"params": {
+						"payee": "The destination address of the funds.\r"
+					}
+				},
+				"withdraw(address)": {
+					"details": "Withdraw accumulated balance for a payee.\r",
+					"params": {
+						"payee": "The address whose funds will be withdrawn and transferred to.\r"
+					}
+				}
+			},
+			"title": "Escrow\r"
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"OptimusFactory/Escrow.sol": "Escrow"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"OptimusFactory/Escrow.sol": {
+			"keccak256": "0x803b73510f9b7e6193451c07a26e3bff80fd84bed14915005a8c9854ef9f7db6",
+			"urls": [
+				"bzzr://70518db7d4f76281f563a9bfaa69cdea2ed6fd7010981b5f672cd02b7f41e537"
+			]
+		},
+		"OptimusFactory/SafeMath.sol": {
+			"keccak256": "0x807c7cc7ca04b74e084ca261006f917603f00a48fb9d6641dbb05a2a1a0c3471",
+			"urls": [
+				"bzzr://d3cfb21a6911d39eedfe6ac6d08d535a33753d7a3e0e4fee559ee470105f1c80"
+			]
+		},
+		"OptimusFactory/Secondary.sol": {
+			"keccak256": "0xf275eb50121b2dc0efcc9ee21a627d2386f57ff2e2154e326b114b1992062db9",
+			"urls": [
+				"bzzr://dccc558e11a77c5779fde718a88618a83798281e27279ca39716cd319e4adc9a"
+			]
+		}
+	},
+	"version": 1
+}

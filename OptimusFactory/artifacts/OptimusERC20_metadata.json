@@ -1,0 +1,830 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "mintingFinished",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "approve",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "totalSupply",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"name": "symbol",
+						"type": "string"
+					},
+					{
+						"name": "decimals",
+						"type": "uint8"
+					},
+					{
+						"name": "cap",
+						"type": "uint256"
+					}
+				],
+				"name": "Initialize",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFrom",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "decimals",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "cap",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"name": "addedValue",
+						"type": "uint256"
+					}
+				],
+				"name": "increaseAllowance",
+				"outputs": [
+					{
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "unpause",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "mint",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "burn",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "isPauser",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "paused",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "renouncePauser",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "burnFrom",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "finishMinting",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "addPauser",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "pause",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "isOwner",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "symbol",
+				"outputs": [
+					{
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "addMinter",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "renounceMinter",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"name": "subtractedValue",
+						"type": "uint256"
+					}
+				],
+				"name": "decreaseAllowance",
+				"outputs": [
+					{
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "isMinter",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"name": "spender",
+						"type": "address"
+					}
+				],
+				"name": "allowance",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "previousOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipRenounced",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [],
+				"name": "Paused",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [],
+				"name": "Unpaused",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "PauserAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "PauserRemoved",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [],
+				"name": "MintingFinished",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "MinterAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "MinterRemoved",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Approval",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {
+				"allowance(address,address)": {
+					"details": "Function to check the amount of tokens that an owner allowed to a spender.\r",
+					"params": {
+						"owner": "address The address which owns the funds.\r",
+						"spender": "address The address which will spend the funds.\r"
+					},
+					"return": "A uint256 specifying the amount of tokens still available for the spender.\r"
+				},
+				"balanceOf(address)": {
+					"details": "Gets the balance of the specified address.\r",
+					"params": {
+						"owner": "The address to query the the balance of.\r"
+					},
+					"return": "An uint256 representing the amount owned by the passed address.\r"
+				},
+				"burn(uint256)": {
+					"details": "Burns a specific amount of tokens.\r",
+					"params": {
+						"value": "The amount of token to be burned.\r"
+					}
+				},
+				"burnFrom(address,uint256)": {
+					"details": "Burns a specific amount of tokens from the target address and decrements allowance\r",
+					"params": {
+						"from": "address The address which you want to send tokens from\r",
+						"value": "uint256 The amount of token to be burned\r"
+					}
+				},
+				"cap()": {
+					"return": "the cap for the token minting.\r"
+				},
+				"decimals()": {
+					"return": "the number of decimals of the token.\r"
+				},
+				"finishMinting()": {
+					"details": "Function to stop minting new tokens.\r",
+					"return": "True if the operation was successful.\r"
+				},
+				"isOwner()": {
+					"return": "true if `msg.sender` is the owner of the contract.\r"
+				},
+				"mint(address,uint256)": {
+					"details": "Function to mint tokens\r",
+					"params": {
+						"amount": "The amount of tokens to mint.\r",
+						"to": "The address that will receive the minted tokens.\r"
+					},
+					"return": "A boolean that indicates if the operation was successful.\r"
+				},
+				"mintingFinished()": {
+					"return": "true if the minting is finished.\r"
+				},
+				"name()": {
+					"return": "the name of the token.\r"
+				},
+				"owner()": {
+					"return": "the address of the owner.\r"
+				},
+				"pause()": {
+					"details": "called by the owner to pause, triggers stopped state\r"
+				},
+				"paused()": {
+					"return": "true if the contract is paused, false otherwise.\r"
+				},
+				"renounceOwnership()": {
+					"details": "Allows the current owner to relinquish control of the contract.\r"
+				},
+				"symbol()": {
+					"return": "the symbol of the token.\r"
+				},
+				"totalSupply()": {
+					"details": "Total number of tokens in existence\r"
+				},
+				"transferOwnership(address)": {
+					"details": "Allows the current owner to transfer control of the contract to a newOwner.\r",
+					"params": {
+						"newOwner": "The address to transfer ownership to.\r"
+					}
+				},
+				"unpause()": {
+					"details": "called by the owner to unpause, returns to normal state\r"
+				}
+			}
+		},
+		"userdoc": {
+			"methods": {
+				"renounceOwnership()": {
+					"notice": "Renouncing to ownership will leave the contract without an owner.\r It will not be possible to call the functions with the `onlyOwner`\r modifier anymore.\r"
+				}
+			}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"OptimusFactory/OptimusERC20.sol": "OptimusERC20"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"OptimusFactory/ERC20.sol": {
+			"keccak256": "0xcbce72fd5f3739416576812b03ab0cf4f68449b0064b685b97164b477b2c5a1e",
+			"urls": [
+				"bzzr://69d4f9a0db5031bd1515e79b966c41c9af2fba832bf4261096b6e22ebef464f0"
+			]
+		},
+		"OptimusFactory/ERC20Mintable.sol": {
+			"keccak256": "0x3b5dd2fab1c4f0246e6a22acd5b2bd4b9ae3e7bb532d160744bc40af30440d54",
+			"urls": [
+				"bzzr://bca19eda8bf1126cd19d3b892c5bba9e8aef7d8a483025c9f93cd2bc30eaeb74"
+			]
+		},
+		"OptimusFactory/IERC20.sol": {
+			"keccak256": "0x14d9f19f6282b54005ec9fcdf159eb09228da7b00a1110354d1bdbf8ef7d24c1",
+			"urls": [
+				"bzzr://4ca226182a1e69db63a7105649a41ed67583fd09c543abf88e04b7d331e26b23"
+			]
+		},
+		"OptimusFactory/MinterRole.sol": {
+			"keccak256": "0xa4372bf28c8267593e671f446e9dc055ef82e235b01cadf8409e1f280ef8edca",
+			"urls": [
+				"bzzr://510b27ed3255020c078c4d3490e174e02b63fa9235e05dc004665c61cdd4198d"
+			]
+		},
+		"OptimusFactory/OptimusERC20.sol": {
+			"keccak256": "0xd34751ce97c6c22babf6ba2e407570dcf6cd182b93e0bc1e205e8829e90f7e00",
+			"urls": [
+				"bzzr://1ee1ff9cae7b3dfde6419c8e3e7229823daeeba28119b4c5839be572896fa28c"
+			]
+		},
+		"OptimusFactory/Ownable.sol": {
+			"keccak256": "0x2c0a0b231894496d7217db34b10bb327a9bd1964bcd98efe00a0f9aa80ab2f64",
+			"urls": [
+				"bzzr://31a927513c0dae79e5a8dde72e692af25327feaae51af43bf603feea8d5ca4ed"
+			]
+		},
+		"OptimusFactory/Pausable.sol": {
+			"keccak256": "0x4a8f8b1dee75168d14765a43e04b896f14e231ce278d1b37a503d6beafe70ff0",
+			"urls": [
+				"bzzr://7e30e79119610ad1e1d0d91ea9d85d844c57b39f0f7bc79ff8348bf44162a358"
+			]
+		},
+		"OptimusFactory/PauserRole.sol": {
+			"keccak256": "0x526b0fb69660f8228b0655c46cbb66e10c2eca910213c8312d8684404dee3ce1",
+			"urls": [
+				"bzzr://a161dc2211c0ebb834d3d9c657ce8195b1fb6fa123ea2f08cac56909a2aea9ec"
+			]
+		},
+		"OptimusFactory/Roles.sol": {
+			"keccak256": "0x8f02c5bd40c2773a2ccc0da7b9874e2c05e5e7924d4fea60c1cad0722a181aa2",
+			"urls": [
+				"bzzr://dd955cd5cad77eb88af4d05a095e7fa1fd00319905d038ff4e9e34b0db744c67"
+			]
+		},
+		"OptimusFactory/SafeMath.sol": {
+			"keccak256": "0x807c7cc7ca04b74e084ca261006f917603f00a48fb9d6641dbb05a2a1a0c3471",
+			"urls": [
+				"bzzr://d3cfb21a6911d39eedfe6ac6d08d535a33753d7a3e0e4fee559ee470105f1c80"
+			]
+		}
+	},
+	"version": 1
+}

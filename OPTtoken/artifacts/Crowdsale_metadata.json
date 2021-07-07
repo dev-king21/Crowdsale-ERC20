@@ -1,0 +1,202 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "rate",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "weiRaised",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "wallet",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "beneficiary",
+						"type": "address"
+					}
+				],
+				"name": "buyTokens",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "token",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"name": "rate",
+						"type": "uint256"
+					},
+					{
+						"name": "wallet",
+						"type": "address"
+					},
+					{
+						"name": "token",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "purchaser",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "beneficiary",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "value",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "TokensPurchased",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {
+				"buyTokens(address)": {
+					"details": "low level token purchase ***DO NOT OVERRIDE***\r",
+					"params": {
+						"beneficiary": "Address performing the token purchase\r"
+					}
+				},
+				"rate()": {
+					"return": "the number of token units a buyer gets per wei.\r"
+				},
+				"token()": {
+					"return": "the token being sold.\r"
+				},
+				"wallet()": {
+					"return": "the address where funds are collected.\r"
+				},
+				"weiRaised()": {
+					"return": "the mount of wei raised.\r"
+				}
+			},
+			"title": "Crowdsale\r"
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"OPTtoken/Crowdsale.sol": "Crowdsale"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"OPTtoken/Crowdsale.sol": {
+			"keccak256": "0xf517927b68bf0fdda1fe9c054f2cee159c955b1d5955fce450016e97531ec5a7",
+			"urls": [
+				"bzzr://71fe1888de0a7e304cc4e49f43ce23777ecf62e57e9e4d904d3c94897e370392"
+			]
+		},
+		"OPTtoken/ERC20.sol": {
+			"keccak256": "0xa00914df397a0d075f4a538be12d8eb8bf0cf0517e7576a310cdd12a2a8cbe60",
+			"urls": [
+				"bzzr://9de33ca1f761012227aeed27cd2a3898e8b800f9df752b19aa6f8634709e0e4d"
+			]
+		},
+		"OPTtoken/IERC20.sol": {
+			"keccak256": "0x14d9f19f6282b54005ec9fcdf159eb09228da7b00a1110354d1bdbf8ef7d24c1",
+			"urls": [
+				"bzzr://4ca226182a1e69db63a7105649a41ed67583fd09c543abf88e04b7d331e26b23"
+			]
+		},
+		"OPTtoken/SafeERC20.sol": {
+			"keccak256": "0x9c424f8d870fe13254eef8e2f07fd9b45ebb48e893e26a41cf8110479ee2b3a0",
+			"urls": [
+				"bzzr://0e3d51729a62b5f32fd0e4a694e5542d41cde495c70ab07acf8a094458d1bd18"
+			]
+		},
+		"OPTtoken/SafeMath.sol": {
+			"keccak256": "0x807c7cc7ca04b74e084ca261006f917603f00a48fb9d6641dbb05a2a1a0c3471",
+			"urls": [
+				"bzzr://d3cfb21a6911d39eedfe6ac6d08d535a33753d7a3e0e4fee559ee470105f1c80"
+			]
+		}
+	},
+	"version": 1
+}

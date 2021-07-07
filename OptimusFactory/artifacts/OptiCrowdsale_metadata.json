@@ -1,0 +1,462 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "hasClosed",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "rate",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "goal",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "weiRaised",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "isOpen",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "closingTime",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "finalize",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "wallet",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "goalReached",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "finalized",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "openingTime",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "beneficiary",
+						"type": "address"
+					}
+				],
+				"name": "claimRefund",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "beneficiary",
+						"type": "address"
+					}
+				],
+				"name": "buyTokens",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "token",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"name": "rate",
+						"type": "uint256"
+					},
+					{
+						"name": "wallet",
+						"type": "address"
+					},
+					{
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"name": "goal",
+						"type": "uint256"
+					},
+					{
+						"name": "openingtime",
+						"type": "uint256"
+					},
+					{
+						"name": "closingtime",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"anonymous": false,
+				"inputs": [],
+				"name": "CrowdsaleFinalized",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "purchaser",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "beneficiary",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "value",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "TokensPurchased",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {
+				"buyTokens(address)": {
+					"details": "low level token purchase ***DO NOT OVERRIDE***\r",
+					"params": {
+						"beneficiary": "Address performing the token purchase\r"
+					}
+				},
+				"claimRefund(address)": {
+					"details": "Investors can claim refunds here if crowdsale is unsuccessful\r",
+					"params": {
+						"beneficiary": "Whose refund will be claimed.\r"
+					}
+				},
+				"closingTime()": {
+					"return": "the crowdsale closing time.\r"
+				},
+				"finalize()": {
+					"details": "Must be called after crowdsale ends, to do some extra finalization\r work. Calls the contract's finalization function.\r"
+				},
+				"finalized()": {
+					"return": "true if the crowdsale is finalized, false otherwise.\r"
+				},
+				"goal()": {
+					"return": "minimum amount of funds to be raised in wei.\r"
+				},
+				"goalReached()": {
+					"details": "Checks whether funding goal was reached.\r",
+					"return": "Whether funding goal was reached\r"
+				},
+				"hasClosed()": {
+					"details": "Checks whether the period in which the crowdsale is open has already elapsed.\r",
+					"return": "Whether crowdsale period has elapsed\r"
+				},
+				"isOpen()": {
+					"return": "true if the crowdsale is open, false otherwise.\r"
+				},
+				"openingTime()": {
+					"return": "the crowdsale opening time.\r"
+				},
+				"rate()": {
+					"return": "the number of token units a buyer gets per wei.\r"
+				},
+				"token()": {
+					"return": "the token being sold.\r"
+				},
+				"wallet()": {
+					"return": "the address where funds are collected.\r"
+				},
+				"weiRaised()": {
+					"return": "the mount of wei raised.\r"
+				}
+			}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"OptimusFactory/OptimusCrowdsale.sol": "OptiCrowdsale"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"OptimusFactory/ConditionalEscrow.sol": {
+			"keccak256": "0x99ffa6b0dabcfbdd06c657f9587672643a7b6b3a9b9f0f03b2ce6dcfb468836c",
+			"urls": [
+				"bzzr://50273fcd52a57bfa3dd20e4711a2d2e9cad2d284db1bb42862ba00951447b54a"
+			]
+		},
+		"OptimusFactory/Crowdsale.sol": {
+			"keccak256": "0xf517927b68bf0fdda1fe9c054f2cee159c955b1d5955fce450016e97531ec5a7",
+			"urls": [
+				"bzzr://71fe1888de0a7e304cc4e49f43ce23777ecf62e57e9e4d904d3c94897e370392"
+			]
+		},
+		"OptimusFactory/ERC20.sol": {
+			"keccak256": "0xcbce72fd5f3739416576812b03ab0cf4f68449b0064b685b97164b477b2c5a1e",
+			"urls": [
+				"bzzr://69d4f9a0db5031bd1515e79b966c41c9af2fba832bf4261096b6e22ebef464f0"
+			]
+		},
+		"OptimusFactory/ERC20Mintable.sol": {
+			"keccak256": "0x3b5dd2fab1c4f0246e6a22acd5b2bd4b9ae3e7bb532d160744bc40af30440d54",
+			"urls": [
+				"bzzr://bca19eda8bf1126cd19d3b892c5bba9e8aef7d8a483025c9f93cd2bc30eaeb74"
+			]
+		},
+		"OptimusFactory/Escrow.sol": {
+			"keccak256": "0x803b73510f9b7e6193451c07a26e3bff80fd84bed14915005a8c9854ef9f7db6",
+			"urls": [
+				"bzzr://70518db7d4f76281f563a9bfaa69cdea2ed6fd7010981b5f672cd02b7f41e537"
+			]
+		},
+		"OptimusFactory/FinalizableCrowdsale.sol": {
+			"keccak256": "0x61d83b6aa8c6bb1a1c109a53e208625c28676ca41513583a9f1d8fa6bee52a23",
+			"urls": [
+				"bzzr://10977988217e49ca0f2b5dc8ee5607036fdbd3957475115764fd1bb7b6337009"
+			]
+		},
+		"OptimusFactory/IERC20.sol": {
+			"keccak256": "0x14d9f19f6282b54005ec9fcdf159eb09228da7b00a1110354d1bdbf8ef7d24c1",
+			"urls": [
+				"bzzr://4ca226182a1e69db63a7105649a41ed67583fd09c543abf88e04b7d331e26b23"
+			]
+		},
+		"OptimusFactory/MintedCrowdsale.sol": {
+			"keccak256": "0x9890f136c13c2cfa16bd502d416b1c72ad088ff71ec5e779586ade2aec082557",
+			"urls": [
+				"bzzr://be1aef0e0d314bf44e855c8925fe4e4ad67a430a8e3cc8137a20f3b8ce22d5f1"
+			]
+		},
+		"OptimusFactory/MinterRole.sol": {
+			"keccak256": "0xa4372bf28c8267593e671f446e9dc055ef82e235b01cadf8409e1f280ef8edca",
+			"urls": [
+				"bzzr://510b27ed3255020c078c4d3490e174e02b63fa9235e05dc004665c61cdd4198d"
+			]
+		},
+		"OptimusFactory/OptimusCrowdsale.sol": {
+			"keccak256": "0xf0e9d8ac2108cc9849ebc53474800841c12f0e03d0bf6c4b16db7d8beb85a02b",
+			"urls": [
+				"bzzr://3dcd496338d645b081e03a3547dd4905675e09e8f6794e976b90b6f77a3bbe67"
+			]
+		},
+		"OptimusFactory/OptimusERC20.sol": {
+			"keccak256": "0x675f8848f8314001d3bf6c1dccaddcac82e8577b2951e5e4b3a542f2f61dd701",
+			"urls": [
+				"bzzr://a5e5a1de27aa15e3374e315168e051ef44cb0900d7b2e6f7d51dd1eee21f5d8b"
+			]
+		},
+		"OptimusFactory/Pausable.sol": {
+			"keccak256": "0x4a8f8b1dee75168d14765a43e04b896f14e231ce278d1b37a503d6beafe70ff0",
+			"urls": [
+				"bzzr://7e30e79119610ad1e1d0d91ea9d85d844c57b39f0f7bc79ff8348bf44162a358"
+			]
+		},
+		"OptimusFactory/PauserRole.sol": {
+			"keccak256": "0x526b0fb69660f8228b0655c46cbb66e10c2eca910213c8312d8684404dee3ce1",
+			"urls": [
+				"bzzr://a161dc2211c0ebb834d3d9c657ce8195b1fb6fa123ea2f08cac56909a2aea9ec"
+			]
+		},
+		"OptimusFactory/RefundEscrow.sol": {
+			"keccak256": "0x2607767c85415e99434c8edc21b8c8eb49147f0e04091d26b5433e8c56cba969",
+			"urls": [
+				"bzzr://566082cc4a67f5af8fdcd49544a6a1ac2d9a3bd7c050e31a59fc2f37aeadd32f"
+			]
+		},
+		"OptimusFactory/RefundableCrowdsale.sol": {
+			"keccak256": "0x30ef992e119006cd549fb71b2d3dfb5dd252665c36bcc7e8e8f3ee81960c50e0",
+			"urls": [
+				"bzzr://5588ddaf76ca623730b9447a01b25fb5641dc741486ed61c75e117825d0a6cfb"
+			]
+		},
+		"OptimusFactory/Roles.sol": {
+			"keccak256": "0x8f02c5bd40c2773a2ccc0da7b9874e2c05e5e7924d4fea60c1cad0722a181aa2",
+			"urls": [
+				"bzzr://dd955cd5cad77eb88af4d05a095e7fa1fd00319905d038ff4e9e34b0db744c67"
+			]
+		},
+		"OptimusFactory/SafeERC20.sol": {
+			"keccak256": "0x9c424f8d870fe13254eef8e2f07fd9b45ebb48e893e26a41cf8110479ee2b3a0",
+			"urls": [
+				"bzzr://0e3d51729a62b5f32fd0e4a694e5542d41cde495c70ab07acf8a094458d1bd18"
+			]
+		},
+		"OptimusFactory/SafeMath.sol": {
+			"keccak256": "0x807c7cc7ca04b74e084ca261006f917603f00a48fb9d6641dbb05a2a1a0c3471",
+			"urls": [
+				"bzzr://d3cfb21a6911d39eedfe6ac6d08d535a33753d7a3e0e4fee559ee470105f1c80"
+			]
+		},
+		"OptimusFactory/Secondary.sol": {
+			"keccak256": "0xf275eb50121b2dc0efcc9ee21a627d2386f57ff2e2154e326b114b1992062db9",
+			"urls": [
+				"bzzr://dccc558e11a77c5779fde718a88618a83798281e27279ca39716cd319e4adc9a"
+			]
+		},
+		"OptimusFactory/TimedCrowdsale.sol": {
+			"keccak256": "0x8124fea126584b635fda85b84ff6073fd4b7eb9146787de3732e829db2fbb4df",
+			"urls": [
+				"bzzr://93abfa73724d0b604c7909e75c34be3fe7d8c4741541df2303106625c702517f"
+			]
+		}
+	},
+	"version": 1
+}

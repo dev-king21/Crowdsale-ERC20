@@ -1,0 +1,273 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "getshop",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"name": "symbol",
+						"type": "string"
+					},
+					{
+						"name": "decimals",
+						"type": "uint8"
+					},
+					{
+						"name": "cap",
+						"type": "uint256"
+					},
+					{
+						"name": "rate",
+						"type": "uint256"
+					},
+					{
+						"name": "wallet",
+						"type": "address"
+					},
+					{
+						"name": "goal_in_eth",
+						"type": "uint256"
+					},
+					{
+						"name": "openingtime",
+						"type": "uint256"
+					},
+					{
+						"name": "closingtime",
+						"type": "uint256"
+					}
+				],
+				"name": "CreateShop",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "OptimusShopList",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "governanceToken",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"name": "optToken",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"OptimusFactory/OptimusFactory.sol": "OptimusFactory"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"OptimusFactory/ConditionalEscrow.sol": {
+			"keccak256": "0x99ffa6b0dabcfbdd06c657f9587672643a7b6b3a9b9f0f03b2ce6dcfb468836c",
+			"urls": [
+				"bzzr://50273fcd52a57bfa3dd20e4711a2d2e9cad2d284db1bb42862ba00951447b54a"
+			]
+		},
+		"OptimusFactory/Crowdsale.sol": {
+			"keccak256": "0xf517927b68bf0fdda1fe9c054f2cee159c955b1d5955fce450016e97531ec5a7",
+			"urls": [
+				"bzzr://71fe1888de0a7e304cc4e49f43ce23777ecf62e57e9e4d904d3c94897e370392"
+			]
+		},
+		"OptimusFactory/ERC20.sol": {
+			"keccak256": "0xcbce72fd5f3739416576812b03ab0cf4f68449b0064b685b97164b477b2c5a1e",
+			"urls": [
+				"bzzr://69d4f9a0db5031bd1515e79b966c41c9af2fba832bf4261096b6e22ebef464f0"
+			]
+		},
+		"OptimusFactory/ERC20Mintable.sol": {
+			"keccak256": "0x3b5dd2fab1c4f0246e6a22acd5b2bd4b9ae3e7bb532d160744bc40af30440d54",
+			"urls": [
+				"bzzr://bca19eda8bf1126cd19d3b892c5bba9e8aef7d8a483025c9f93cd2bc30eaeb74"
+			]
+		},
+		"OptimusFactory/Escrow.sol": {
+			"keccak256": "0x803b73510f9b7e6193451c07a26e3bff80fd84bed14915005a8c9854ef9f7db6",
+			"urls": [
+				"bzzr://70518db7d4f76281f563a9bfaa69cdea2ed6fd7010981b5f672cd02b7f41e537"
+			]
+		},
+		"OptimusFactory/FinalizableCrowdsale.sol": {
+			"keccak256": "0x61d83b6aa8c6bb1a1c109a53e208625c28676ca41513583a9f1d8fa6bee52a23",
+			"urls": [
+				"bzzr://10977988217e49ca0f2b5dc8ee5607036fdbd3957475115764fd1bb7b6337009"
+			]
+		},
+		"OptimusFactory/IERC20.sol": {
+			"keccak256": "0x14d9f19f6282b54005ec9fcdf159eb09228da7b00a1110354d1bdbf8ef7d24c1",
+			"urls": [
+				"bzzr://4ca226182a1e69db63a7105649a41ed67583fd09c543abf88e04b7d331e26b23"
+			]
+		},
+		"OptimusFactory/MintedCrowdsale.sol": {
+			"keccak256": "0x9890f136c13c2cfa16bd502d416b1c72ad088ff71ec5e779586ade2aec082557",
+			"urls": [
+				"bzzr://be1aef0e0d314bf44e855c8925fe4e4ad67a430a8e3cc8137a20f3b8ce22d5f1"
+			]
+		},
+		"OptimusFactory/MinterRole.sol": {
+			"keccak256": "0xa4372bf28c8267593e671f446e9dc055ef82e235b01cadf8409e1f280ef8edca",
+			"urls": [
+				"bzzr://510b27ed3255020c078c4d3490e174e02b63fa9235e05dc004665c61cdd4198d"
+			]
+		},
+		"OptimusFactory/OptimusCrowdsale.sol": {
+			"keccak256": "0x694fa6a3ffd3979034ec0106909a11b382261c55080b739400f072f799cfd7e6",
+			"urls": [
+				"bzzr://c2fcd8c3a76b8414d918bc4233c55843645b4267dc1a338d75ec7e1fc31ff246"
+			]
+		},
+		"OptimusFactory/OptimusERC20.sol": {
+			"keccak256": "0xd34751ce97c6c22babf6ba2e407570dcf6cd182b93e0bc1e205e8829e90f7e00",
+			"urls": [
+				"bzzr://1ee1ff9cae7b3dfde6419c8e3e7229823daeeba28119b4c5839be572896fa28c"
+			]
+		},
+		"OptimusFactory/OptimusFactory.sol": {
+			"keccak256": "0xfb1dcea8cb73cea9bf354814025867aec42f531c57e018b88ef101bca4549ff8",
+			"urls": [
+				"bzzr://aeb5526d2de2da712a1823c1f20f3ea14a956d69addb81fa710afafc5c92d7c1"
+			]
+		},
+		"OptimusFactory/OptimusShop.sol": {
+			"keccak256": "0x53f1b8962e5bc987d3e8edb48d0d83c0ab070134b6b9af09508570407c3c3467",
+			"urls": [
+				"bzzr://a024272cf644ffda3beecdb2e4ccc1d1527b341f18e75676127549881266fcd9"
+			]
+		},
+		"OptimusFactory/Ownable.sol": {
+			"keccak256": "0x2c0a0b231894496d7217db34b10bb327a9bd1964bcd98efe00a0f9aa80ab2f64",
+			"urls": [
+				"bzzr://31a927513c0dae79e5a8dde72e692af25327feaae51af43bf603feea8d5ca4ed"
+			]
+		},
+		"OptimusFactory/Pausable.sol": {
+			"keccak256": "0x4a8f8b1dee75168d14765a43e04b896f14e231ce278d1b37a503d6beafe70ff0",
+			"urls": [
+				"bzzr://7e30e79119610ad1e1d0d91ea9d85d844c57b39f0f7bc79ff8348bf44162a358"
+			]
+		},
+		"OptimusFactory/PauserRole.sol": {
+			"keccak256": "0x526b0fb69660f8228b0655c46cbb66e10c2eca910213c8312d8684404dee3ce1",
+			"urls": [
+				"bzzr://a161dc2211c0ebb834d3d9c657ce8195b1fb6fa123ea2f08cac56909a2aea9ec"
+			]
+		},
+		"OptimusFactory/RefundEscrow.sol": {
+			"keccak256": "0x2607767c85415e99434c8edc21b8c8eb49147f0e04091d26b5433e8c56cba969",
+			"urls": [
+				"bzzr://566082cc4a67f5af8fdcd49544a6a1ac2d9a3bd7c050e31a59fc2f37aeadd32f"
+			]
+		},
+		"OptimusFactory/RefundableCrowdsale.sol": {
+			"keccak256": "0x30ef992e119006cd549fb71b2d3dfb5dd252665c36bcc7e8e8f3ee81960c50e0",
+			"urls": [
+				"bzzr://5588ddaf76ca623730b9447a01b25fb5641dc741486ed61c75e117825d0a6cfb"
+			]
+		},
+		"OptimusFactory/Roles.sol": {
+			"keccak256": "0x8f02c5bd40c2773a2ccc0da7b9874e2c05e5e7924d4fea60c1cad0722a181aa2",
+			"urls": [
+				"bzzr://dd955cd5cad77eb88af4d05a095e7fa1fd00319905d038ff4e9e34b0db744c67"
+			]
+		},
+		"OptimusFactory/SafeERC20.sol": {
+			"keccak256": "0x9c424f8d870fe13254eef8e2f07fd9b45ebb48e893e26a41cf8110479ee2b3a0",
+			"urls": [
+				"bzzr://0e3d51729a62b5f32fd0e4a694e5542d41cde495c70ab07acf8a094458d1bd18"
+			]
+		},
+		"OptimusFactory/SafeMath.sol": {
+			"keccak256": "0x807c7cc7ca04b74e084ca261006f917603f00a48fb9d6641dbb05a2a1a0c3471",
+			"urls": [
+				"bzzr://d3cfb21a6911d39eedfe6ac6d08d535a33753d7a3e0e4fee559ee470105f1c80"
+			]
+		},
+		"OptimusFactory/Secondary.sol": {
+			"keccak256": "0xf275eb50121b2dc0efcc9ee21a627d2386f57ff2e2154e326b114b1992062db9",
+			"urls": [
+				"bzzr://dccc558e11a77c5779fde718a88618a83798281e27279ca39716cd319e4adc9a"
+			]
+		},
+		"OptimusFactory/TimedCrowdsale.sol": {
+			"keccak256": "0x03c3f13b2b5762c9cab80b24a8fae9f2afb294292c0d4cca451f0c907848e755",
+			"urls": [
+				"bzzr://8e872df881a5b8e4ff2fe437546048a3e303c412e5ad46bf7e4092c0d7ba058d"
+			]
+		}
+	},
+	"version": 1
+}
